@@ -1,0 +1,628 @@
+/* ================== FONTS ================== */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ================== ROOT ================== */
+:root {
+  --bg-primary: #0B1020;
+  --blue: #2563EB;
+  --yellow: #FACC15;
+  --gold: #EAB308;
+  --text-light: #cbd5f5;
+}
+
+/* ================== GLOBAL ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-primary);
+  color: white;
+  overflow-x: hidden;
+  padding-top: 70px;
+  transition: background-color 0.4s ease;
+  background: radial-gradient(circle at top, #0f172a, var(--bg-primary));
+}
+
+/* ================== TYPOGRAPHY ================== */
+h1, h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+
+p {
+  color: #94a3b8;
+}
+
+/* ================== LAYOUT ================== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section {
+  margin: 40px 0;
+  padding: 25px;
+  background: #020617;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  scroll-margin-top: 80px;
+}
+
+/* ================== NAVBAR ================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  backdrop-filter: blur(12px);
+  background: rgba(11, 16, 32, 0.6);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+
+  padding: 12px 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* MAIN FLEX CONTAINER */
+.nav-container {
+  width: 95%;
+  max-width: 1300px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LEFT LINKS */
+.nav-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* LINKS */
+.navbar a {
+  color: var(--text-light);
+  font-size: 14px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--yellow);
+}
+
+.navbar a.active {
+  color: var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+  padding-bottom: 3px;
+}
+
+/* ================== BUTTON ================== */
+.theme-toggle {
+  padding: 6px 14px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* ================== TITLE ================== */
+.main-title {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px 0;
+}
+
+/* ================== SNAPSHOT ================== */
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #020617;
+  padding: 20px;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: var(--blue);
+}
+
+.card h2 {
+  color: var(--yellow);
+}
+
+/* ================== JOURNEY ================== */
+.journey-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.timeline {
+  border-left: 2px solid #334155;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  background: var(--blue);
+  border-radius: 50%;
+}
+
+/* ================== TABLE ================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #334155;
+  padding: 10px;
+}
+
+th {
+  background: #020617;
+  color: var(--yellow);
+  font-size: 12px;
+}
+
+/* ================== GRIDS ================== */
+.profile-grid,
+.ipl-grid,
+.personal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.nickname-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* ================== FAN ZONE ================== */
+.nickname-card {
+  background: #020617;
+  padding: 15px;
+  border: 1px solid #334155;
+  text-align: center;
+  color: var(--yellow);
+}
+
+.quote-carousel button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: var(--blue);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ================== TROPHY CABINET ================== */
+.trophy-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.trophy-card {
+  background: #020617;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(250, 204, 21, 0.3);
+  transition: 0.3s;
+}
+
+.trophy-card h2 {
+  color: var(--yellow);
+}
+
+/* GOLD GLOW */
+.trophy-card:hover {
+  border-color: var(--gold);
+  box-shadow:
+    0 0 10px var(--yellow),
+    0 0 20px var(--gold),
+    0 0 30px rgba(250, 204, 21, 0.5);
+}
+
+/* ================== FOOTER ================== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #334155;
+}
+
+.jersey {
+  font-size: 60px;
+  color: var(--yellow);
+  text-shadow: 0 0 10px var(--yellow), 0 0 20px var(--gold);
+}
+
+/* ================== THEME ================== */
+.blue {
+  --bg-primary: #0B1020;
+}
+
+.yellow {
+  --bg-primary: #1a1400;
+}
+
+/* ================== SWITCH ================== */
+.theme-switch {
+  cursor: pointer;
+}
+
+/* Switch Background */
+.switch {
+  width: 55px;
+  height: 28px;
+  background: #1e293b;
+  border-radius: 50px;
+  position: relative;
+  transition: 0.4s;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Active (CSK Yellow) */
+.switch.active {
+  background: linear-gradient(135deg, #FACC15, #EAB308);
+}
+
+/* Circle */
+.circle {
+  width: 22px;
+  height: 22px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  transition: 0.4s;
+}
+
+/* Move circle when active */
+.switch.active .circle {
+  transform: translateX(26px);
+}
+
+/* Glow Effect */
+.switch.active {
+  box-shadow: 0 0 10px #FACC15, 0 0 20px #EAB308;
+}
+
+/* DEFAULT (India Blue) */
+.blue {
+  --bg-primary: #0B1020;
+  --blue: #2563EB;
+  --yellow: #FACC15;
+  --gold: #EAB308;
+  --text-light: #cbd5f5;
+}
+
+/* CSK Yellow THEME */
+.yellow {
+  --bg-primary: #1a1400;
+  --blue: #FACC15;        /* 👈 becomes primary */
+  --yellow: #FACC15;
+  --gold: #EAB308;
+  --text-light: #fef08a;
+}
+
+body {
+  background-color: var(--bg-primary);
+}
+
+.card h2 {
+  color: var(--yellow);
+}
+
+.navbar a:hover {
+  color: var(--yellow);
+}
+
+.timeline-item::before {
+  background: var(--blue);
+}
+
+.quote-carousel button {
+  background: var(--blue);
+}
+
+.section {
+  background: rgba(2, 6, 23, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.card,
+.trophy-card,
+.nickname-card {
+  transition: all 0.3s ease;
+}
+
+.card:hover,
+.trophy-card:hover,
+.nickname-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.main-title {
+  text-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.navbar a {
+  position: relative;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: var(--yellow);
+  transition: 0.3s;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+  width: 100%;
+}
+
+.yellow .section {
+  box-shadow: 0 0 20px rgba(250,204,21,0.2);
+}
+
+.yellow .navbar {
+  box-shadow: 0 0 20px rgba(250,204,21,0.2);
+}
+
+.container {
+  width: 95%;
+}
+
+.snapshot-grid {
+  grid-template-columns: 1fr;
+}
+
+.trophy-grid {
+  grid-template-columns: 1fr;
+}
+
+.nickname-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.journey-container {
+  grid-template-columns: 1fr;
+}
+
+/* Footer Layout */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
+  border-top: 1px solid #334155;
+}
+
+/* Text */
+.footer-text {
+  margin-top: 10px;
+  color: var(--text-light);
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: var(--blue);
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--yellow);
+}
+
+/* Tribute */
+.tribute {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* Copyright */
+.copyright {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* ================== BREAKPOINTS ================== */
+@media (min-width: 768px) {
+  .snapshot-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trophy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .journey-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .snapshot-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trophy-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .nickname-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.nav-links {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+
+/* NAVBAR */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--yellow);
+}
+
+/* RIGHT SIDE */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background: #020617;
+  padding: 15px;
+  gap: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .main-title {
+    font-size: 22px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+}
+
+
+/* MOBILE FIRST */
+.snapshot-grid,
+.trophy-grid,
+.nickname-grid {
+  grid-template-columns: 1fr;
+}
+
+/* TABLET */
+@media (min-width: 600px) {
+  .snapshot-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .snapshot-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trophy-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.section {
+  margin: 25px 0;
+}
+
+@media (min-width: 768px) {
+  .section {
+    margin: 40px 0;
+  }
+}
