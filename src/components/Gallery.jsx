@@ -9,12 +9,12 @@ import { staggerContainer, scaleIn } from "../utils/animations";
 // import img6 from "../public/dhoni_image_6.jpg";
 
 const dummyPhotos = [
-  "../public/dhoni_image_1.jpg",
-  "../public/dhoni_image_2.jpg",
-  "../public/dhoni_image_3.jpg",
-  "../public/dhoni_image_4.jpg",
-  "../public/dhoni_image_5.jpg",
-  "../public/dhoni_image_6.jpg",
+  "/dhoni_image_1.jpg",
+  "/dhoni_image_2.jpg",
+  "/dhoni_image_3.jpg",
+  "/dhoni_image_4.jpg",
+  "/dhoni_image_5.jpg",
+  "/dhoni_image_6.jpg",
 ];
 
 function Gallery() {
