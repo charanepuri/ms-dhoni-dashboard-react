@@ -1,13 +1,20 @@
 import { motion } from "framer-motion";
 import { staggerContainer, scaleIn } from "../utils/animations";
 
+// import img1 from "../public/dhoni_image_1.jpg";
+// import img2 from "../public/dhoni_image_2.jpg";
+// import img3 from "../public/dhoni_image_3.jpg";
+// import img4 from "../public/dhoni_image_4.jpg";
+// import img5 from "../public/dhoni_image_5.jpg";
+// import img6 from "../public/dhoni_image_6.jpg";
+
 const dummyPhotos = [
-  "src/assests/dhoni_image_1.jpg",
-  "src/assests/dhoni_image_2.jpg",
-  "src/assests/dhoni_image_3.jpg",
-  "src/assests/dhoni_image_4.jpg",
-  "src/assests/dhoni_image_5.jpg",
-  "src/assests/dhoni_image_6.jpg",
+  "../public/dhoni_image_1.jpg",
+  "../public/dhoni_image_2.jpg",
+  "../public/dhoni_image_3.jpg",
+  "../public/dhoni_image_4.jpg",
+  "../public/dhoni_image_5.jpg",
+  "../public/dhoni_image_6.jpg",
 ];
 
 function Gallery() {
