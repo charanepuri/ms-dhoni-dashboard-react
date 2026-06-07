@@ -15,6 +15,7 @@ import CareerSummary from "../components/CareerSummary"
 import About from "../components/About"
 import FanZone from "../components/FanZone"
 import TrophyCabinet from "../components/TrophyCabinet"
+import Gallery from "../components/Gallery"
 
 import { motion } from "framer-motion"
 import { fadeUp } from "../utils/animations"
@@ -50,6 +51,7 @@ function Home() {
         <Section id="about"><About /></Section>
         <Section id="trophies"><TrophyCabinet /></Section>
         <Section id="fanzone"><FanZone /></Section>
+        <Section id="gallery"><Gallery /></Section>
 
         <Footer />
       </div>

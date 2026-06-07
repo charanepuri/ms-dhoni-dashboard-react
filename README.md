@@ -8,7 +8,7 @@ This project showcases Dhoni’s career, achievements, stats, and legacy with a 
 
 ## 🚀 Live Demo
 
-🔗 _Add your deployed link here (Netlify / Vercel)_
+https://ms-dhoni-dashboard-react.vercel.app
 
 ---
 
@@ -32,15 +32,17 @@ All displayed in a **clean, modern, glassmorphism-based UI**.
 ### ✨ UI & Experience
 
 - Glassmorphism design
-- Gradient dark theme
+- Gradient dark theme with **animated background**
+- Automatic **glowing title effect**
 - Smooth hover animations
 - Premium dashboard layout
 
-### 🎬 Animations (Framer Motion)
+### 🎬 Animations (Framer Motion & CSS)
 
 - Scroll-based section reveal
 - Staggered card animations
-- Navbar entry animation
+- Responsive mobile-friendly Navbar
+- **Scroll-spy active section highlighting**
 - Micro-interactions (hover & click effects)
 
 ### 🏆 Special Highlights
@@ -78,6 +80,7 @@ All displayed in a **clean, modern, glassmorphism-based UI**.
 - About Section
 - Trophy Cabinet (Gold glow UI)
 - Fan Zone (Nicknames, Finishes)
+- **Gallery (Interactive photo grid)**
 
 ### 📱 Responsiveness
 
@@ -119,6 +122,7 @@ src/
 │   ├── About.jsx
 │   ├── TrophyCabinet.jsx
 │   ├── FanZone.jsx
+│   ├── Gallery.jsx
 │   └── Footer.jsx
 │
 ├── pages/
@@ -196,13 +200,12 @@ This project is created as a tribute to **MS Dhoni**, one of the greatest cricke
 
 ## 📬 Connect With Me
 
--LinkedIn: https://www.linkedin.com/in/charan-teja-972aa9231/
-
--GitHub: https://github.com/charanepuri
-
--Instagram: https://www.instagram.com/_just_call_me_charan_tej/
-
--Snapchat: https://www.snapchat.com/add/justcalltej2003?share_id=o3MYfXqlpYE&locale=en-IN
+- **React Portfolio**: https://charan-react-portfolio.vercel.app/
+- **Django Portfolio**: https://portfolio-site-django.onrender.com/
+- **LinkedIn**: https://www.linkedin.com/in/charan-teja-972aa9231/
+- **GitHub**: https://github.com/charanepuri
+- **Instagram**: https://www.instagram.com/_just_call_me_charan_tej/
+- **Snapchat**: https://www.snapchat.com/add/justcalltej2003?share_id=o3MYfXqlpYE&locale=en-IN
 
 ⭐ If you like this project, consider giving it a star!
 
